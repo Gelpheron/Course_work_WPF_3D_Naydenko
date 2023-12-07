@@ -1,0 +1,36 @@
+﻿<Window x:Class="Курсова_робота_Найденко_Влад__10_А.DataSphere"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:Курсова_робота_Найденко_Влад__10_А"
+        mc:Ignorable="d"
+        Title="Введіть дані сфери" Height="304" Width="500" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+            <GradientStop Color="#7e7e7e" Offset="0" />
+            <GradientStop Color="White" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Label Content="Введіть кількість полігонів по вертикалі" HorizontalAlignment="Left" Margin="15,35,0,0" VerticalAlignment="Top" Width="250" Height="15"/>
+        <Label Content="Введіть кількість полігонів по горизонталі" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="250" Height="15"/>
+        <TextBox x:Name="uText" Text="20" TextWrapping="Wrap" Margin="280,34,0,0" Height="18" HorizontalAlignment="Left" VerticalAlignment="Top" Width="146"/>
+        <TextBox x:Name="vText" Text="20" TextWrapping="Wrap" Margin="280,9,0,0" Height="18" HorizontalAlignment="Left" VerticalAlignment="Top" Width="146"/>
+        <Label Content="Введіть радіус сфери" HorizontalAlignment="Left" Margin="15,60,0,0" VerticalAlignment="Top" Width="120" Height="15"/>
+        <TextBox Text="3" Name="RadiusSphere" HorizontalAlignment="Left" Margin="280,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="18"/>
+        <Button x:Name="Start" Content="Створити кулю" Style ="{StaticResource YellowButton}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="130" Margin="0,220,0,0" Height="40"/>
+        <Label Content="Введіть координати центру кулі:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="15,85,0,0" Height="15"/>
+        <xctk:ColorPicker Name="ColorPicker1" DisplayColorAndName="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,200,0,0" Width="100"/>
+        <Label  Margin="15,110,0,0" Height="25" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top">X:</Label>
+        <Label  Margin="15,135,0,0" Height="25" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top">Y:</Label>
+        <Label  Margin="15,160,0,0" Height="25" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top">Z:</Label>
+        <TextBox Text="3" x:Name="SphereCenterX" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,160,0,0" Width="120" Height="18"/>
+        <TextBox Text="2" x:Name="SphereCenterY" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,135,0,0" Width="120" Height="18"/>
+        <TextBox  Text ="6" x:Name="SphereCenterZ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,110,0,0" Width="120" Height="18"/>
+        <Label Content="Ім'я примітиву" HorizontalAlignment="Left" Height="20" Width="120" Margin="331,80,0,0"/>
+        <TextBox x:Name="nameShape" HorizontalAlignment="Left" Margin="331,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
+

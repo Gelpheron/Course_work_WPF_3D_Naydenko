@@ -1,0 +1,41 @@
+﻿<Window x:Class="Курсова_робота_Найденко_Влад__10_А.ConDataPaintWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Курсова_робота_Найденко_Влад__10_А"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Введіть дані конусу" Height="339" Width="408" ResizeMode="NoResize" >
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+            <GradientStop Color="#7e7e7e" Offset="0" />
+            <GradientStop Color="White" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Label Content="Введіть радіус основи конусу" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Height="15" Width="166"/>
+        <TextBox Text="2" x:Name="ConeRadius" HorizontalAlignment="Left" Margin="220,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Введіть висоту конуса" HorizontalAlignment="Left" Margin="15,35,0,0" VerticalAlignment="Top" Height="15" Width="150"/>
+        <TextBox Name="ConeHeight" Text="5" HorizontalAlignment="Left" Margin="220,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Введіть центр конуса" HorizontalAlignment="Left" Margin="15,110,0,0" VerticalAlignment="Top" Height="15" Width="150"/>
+        <Label Content="Введіть радіус вершини" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,60,0,0" Height="15" Width="150"/>
+        <TextBox x:Name="ConeVertexRadius" Text="5" TextWrapping="Wrap" Width="120" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,60,0,0"/>
+        <Label Content="Введіть кількість граней" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,85,0,0" Height="15" Width="150"/>
+        <TextBox x:Name="ConeEdgeNumber" Text="20" TextWrapping="Wrap" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="220,85,0,0"/>
+        <StackPanel>
+            <Label Content="X:" Margin="-80,140,253,0" Height="25" Width="20"/>
+            <Label Content="Y:" Margin="-80,0,253,0" Height="25" Width="20"/>
+            <Label Content="Z:" Margin="-80,0,253,0" Height="25" Width="20"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBox x:Name="ConeCenterX" Text="2" Margin="-150,140,0,0" Width="120"/>
+            <TextBox x:Name="ConeCenterY" Text="2" Margin="-150,10,0,0" Width="120" />
+            <TextBox x:Name="ConeCenterZ" Text="2" Margin="-150,10,0,0" Width="120" />
+        </StackPanel>
+        <Label Content="Ім'я примітиву" Height="20" Width="120" Margin="242,100,0,0"/>
+        <TextBox x:Name="ConeName" TextWrapping="Wrap" Width="120" Height="22" Margin="242,224,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ConeCreate" Style ="{StaticResource YellowButton}" Content="Побудувати конус" HorizontalAlignment="Center" Margin="0,249,0,0" VerticalAlignment="Top" Width="130" Height="40"/>
+        <xctk:ColorPicker Name="ColorPicker1" DisplayColorAndName="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,224,0,0" Width="100"/>
+    </Grid>
+</Window>

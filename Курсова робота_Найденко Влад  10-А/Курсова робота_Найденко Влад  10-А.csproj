@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Курсова_робота_Найденко_Влад__10_А</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\PhotoCone.png" />
+    <None Remove="Images\PhotoCylinder.png" />
+    <None Remove="Images\PhotoSphere.png" />
+    <None Remove="Images\PhotoSphere11.png" />
+    <None Remove="Images\PhotoTorus.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="3DTools">
+      <HintPath>bin\Debug\netcoreapp3.1\3DTools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\PhotoCone.png" />
+    <Resource Include="Images\PhotoCylinder.png" />
+    <Resource Include="Images\PhotoSphere.png" />
+    <Resource Include="Images\PhotoTorus.png" />
+  </ItemGroup>
+
+</Project>
